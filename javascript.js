@@ -23,7 +23,7 @@ let roundsLost=0;
 /* let roundResult=0; */
 
 function playRound(e){
-    let playerChoice=e.target.textContent;
+    let playerChoice=e.target.id;
     let computerSelection=getComputerChoice();
     let roundRes=document.querySelector('.results');
     roundRes.textContent=(`Player chose ${playerChoice} and Computer chose ${computerSelection}`);
